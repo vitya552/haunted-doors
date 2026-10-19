@@ -8,7 +8,7 @@ A host hides treats and tricks behind the doors of a haunted house and seals the
 
 - Template on Esmeralda: `template_2fcf98c66e524bba67311e6b4c21bf8b528103bccd5e19091fca840cba789563`
 - Demo house: `component_ed3f54960db166d35ae0211b1ee8335783ecb97d92a3712e7460b79b0c52d0c6`
-- Live demo: see the contest submission post (static Vite build of `web/`)
+- Live demo: http://haunted-doors.5.252.101.65.sslip.io (static Vite build of `web/`, served by nginx)
 
 ## What is private, and what is not
 

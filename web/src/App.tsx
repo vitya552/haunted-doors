@@ -77,7 +77,7 @@ export function App() {
       <footer>
         <a href="https://community.tari.com/t/october-build-contest-thread-spooky-secrets/396" target="_blank" rel="noreferrer">Spooky Secrets</a>
         <span>·</span>
-        <a href={G.substateUrl(G.TEMPLATE)} target="_blank" rel="noreferrer">template {short(G.TEMPLATE.replace("template_", ""), 6, 4)}</a>
+        <a href={G.templateUrl(G.TEMPLATE)} target="_blank" rel="noreferrer">template {short(G.TEMPLATE.replace("template_", ""), 6, 4)}</a>
         <span>·</span>
         <span>keys never leave this browser</span>
       </footer>

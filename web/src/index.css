@@ -36,7 +36,7 @@ h3 { font-size: 1.05rem; color: var(--pumpkin2); margin-top: 24px; }
 p { line-height: 1.5; margin: 8px 0; }
 
 .shell { max-width: 1040px; margin: 0 auto; padding: 20px 16px 48px; }
-.top { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; padding-bottom: 18px; }
+.top { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; padding: 230px 0 18px; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand-mark { width: 34px; height: 48px; border-radius: 17px 17px 3px 3px; background: linear-gradient(180deg, var(--wood2), var(--wood)); box-shadow: 0 0 18px rgba(255,138,31,0.45), inset 0 0 0 2px rgba(0,0,0,0.4); position: relative; display: block; }
 .brand-mark i { position: absolute; right: 7px; top: 24px; width: 5px; height: 5px; border-radius: 50%; background: #ffe9a8; box-shadow: 0 0 6px rgba(255,200,100,0.8); }
@@ -131,6 +131,8 @@ label { display: flex; flex-direction: column; gap: 6px; font-size: 0.85rem; col
 footer { margin-top: 28px; display: flex; gap: 10px; justify-content: center; color: var(--muted); font-size: 0.85rem; flex-wrap: wrap; }
 
 @media (max-width: 640px) {
+  .top { padding-top: 150px; }
+  body { background-size: 100% 420px, auto 420px, auto, auto, auto; }
   .card { padding: 16px; }
   .tabs { margin-left: 0; }
   .door-frame { width: 100px; height: 145px; }

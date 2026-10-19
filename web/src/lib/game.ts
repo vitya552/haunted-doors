@@ -252,6 +252,7 @@ export function closeAmount(house: HouseState, poolBalance: bigint): bigint {
 
 export const txUrl = (txId: string) => `${EXPLORER}/tx/${txId}`;
 export const substateUrl = (id: string) => `${EXPLORER}/substate/${id}`;
+export const templateUrl = (id: string) => `${EXPLORER}/template/${id.replace(/^template_/, "")}`;
 
 export async function fetchVaultBalance(vault: string, url: string = O.INDEXER_URL): Promise<bigint> {
   const response = await fetch(`${url.replace(/\/$/, "")}/substates/${vault}`);

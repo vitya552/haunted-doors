@@ -67,8 +67,8 @@ The browser keeps a stealth wallet (owner key + view key) in `localStorage`, sca
 | reveal door 1 | `29bf23dffe528a986ab6a7f7eeebec72b02f07b1da82041625d04e91451afee0` |
 | claim 20 tXTR as a stealth output | `1d62d650766f95ce5ca5a515f2cf0fffa46120913f28abba6e6286c012871999` |
 | knock door 2, reveal a trick, settle | `44068b58…3b16`, `0eec7f79…afa7`, `00439947…dbd0` |
-| knock door 3 from the browser demo | `0f8f8265…97eb4` (see the explorer for the full id) |
-| claim 10 tXTR from the browser demo | `21dcba2f…5910` |
+| knock door 3 from the browser demo | `0f8f8265b2a0b61d48187a6771c777b5b84aba9cf9f8ad4fcf1aca8c13997eb4` |
+| claim 10 tXTR from the browser demo | `21dcba2f6ba7d8cf0ef40d54af9bf1f12f4a2edbea6b83ce57e162ca37db5910` |
 
 Every transaction committed with fees of 0.01-0.02 tXTR. Explorer: `https://explorer.tari.mw/tx/<id>` (template: `https://explorer.tari.mw/template/<id>`, house: `https://explorer.tari.mw/substate/<id>`).
 

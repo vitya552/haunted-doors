@@ -34,6 +34,7 @@ export function App() {
 
   return (
     <div className="shell">
+      <div className="hero" aria-hidden="true" />
       <header className="top">
         <div className="brand">
           <span className="brand-mark" aria-hidden="true"><i /></span>

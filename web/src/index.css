@@ -20,12 +20,10 @@ body {
   font-family: "Georgia", "Times New Roman", serif;
   color: var(--ink);
   background:
-    linear-gradient(180deg, rgba(10, 6, 18, 0.15) 0%, rgba(10, 6, 18, 0.55) 55%, var(--bg) 100%) 0 0 / 100% 620px no-repeat,
-    url("/art/mansion.webp") center top / auto 620px no-repeat,
     radial-gradient(circle at 82% 8%, rgba(255, 244, 194, 0.22) 0, rgba(255, 244, 194, 0.08) 90px, transparent 160px),
     radial-gradient(circle at 20% 110%, rgba(255, 138, 31, 0.18), transparent 50%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg2) 60%, #1b0f20 100%);
-  background-attachment: scroll, scroll, fixed, fixed, fixed;
+  background-attachment: fixed;
 }
 a { color: var(--pumpkin2); }
 code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em; word-break: break-all; }
@@ -35,6 +33,7 @@ h2 { font-size: 1.35rem; color: var(--moon); }
 h3 { font-size: 1.05rem; color: var(--pumpkin2); margin-top: 24px; }
 p { line-height: 1.5; margin: 8px 0; }
 
+.hero { position: absolute; left: 0; right: 0; top: 0; height: 620px; z-index: -1; background: url("/art/mansion.webp") center top / cover no-repeat; -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 50%, transparent 100%); mask-image: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 50%, transparent 100%); }
 .shell { max-width: 1040px; margin: 0 auto; padding: 20px 16px 48px; }
 .top { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; padding: 230px 0 18px; }
 .brand { display: flex; align-items: center; gap: 12px; }
@@ -132,7 +131,7 @@ footer { margin-top: 28px; display: flex; gap: 10px; justify-content: center; co
 
 @media (max-width: 640px) {
   .top { padding-top: 150px; }
-  body { background-size: 100% 420px, auto 420px, auto, auto, auto; }
+  .hero { height: 420px; }
   .card { padding: 16px; }
   .tabs { margin-left: 0; }
   .door-frame { width: 100px; height: 145px; }

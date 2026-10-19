@@ -70,6 +70,14 @@ The browser keeps a stealth wallet (owner key + view key) in `localStorage`, sca
 | knock door 3 from the browser demo | `0f8f8265b2a0b61d48187a6771c777b5b84aba9cf9f8ad4fcf1aca8c13997eb4` |
 | claim 10 tXTR from the browser demo | `21dcba2f6ba7d8cf0ef40d54af9bf1f12f4a2edbea6b83ce57e162ca37db5910` |
 
+Silent-host proof on a disposable house (`component_e6a8d60f0bcd82981173070a838df6bc9f892a1857e3fe8368a3d8e96c531ba2`, reveal window of 1 epoch):
+
+| step | transaction |
+| --- | --- |
+| open (4 doors, bond 2 tXTR per door) | `94a15fd3733da2395ad189fed3beb465dc9f3f593c4bf1937ca3db63ec7389da` |
+| knock door 1 at epoch 12470 | `502bd63a64b42242e23468b24e383272a0ec9a03f2cd76ebe7318bf0f98a04e3` |
+| claim_timeout at epoch 12472: knock price + bond back to the player as a fresh stealth output | `dfde3ebb415e2129c4ea200d2f655d87a798bbd817633d74ff3454f2ff68ea2f` |
+
 Every transaction committed with fees of 0.01-0.02 tXTR. Explorer: `https://explorer.tari.mw/tx/<id>` (template: `https://explorer.tari.mw/template/<id>`, house: `https://explorer.tari.mw/substate/<id>`).
 
 ## Design notes

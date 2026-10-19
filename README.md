@@ -1,5 +1,7 @@
 # Haunted Doors
 
+![Haunted Doors](web/public/art/cover.jpg)
+
 A confidential trick-or-treat game on [Tari Ootle](https://ootle.tari.com), built for the Tari October Build Contest "Spooky Secrets".
 
 A host hides treats and tricks behind the doors of a haunted house and seals the layout on chain as a Merkle root. Players pay to knock on a door with a one-time key; the host must open the door with a Merkle proof or forfeit a bond. Treats are paid to players as fresh stealth outputs - the chain never learns who knocked, who won, or how much.
@@ -68,7 +70,7 @@ The browser keeps a stealth wallet (owner key + view key) in `localStorage`, sca
 | knock door 3 from the browser demo | `0f8f8265…97eb4` (see the explorer for the full id) |
 | claim 10 tXTR from the browser demo | `21dcba2f…5910` |
 
-Every transaction committed with fees of 0.01-0.02 tXTR. Explorer: `https://taritracker.com/ootle/esmeralda/transactions/<id>`.
+Every transaction committed with fees of 0.01-0.02 tXTR. Explorer: `https://explorer.tari.mw/tx/<id>` (template: `https://explorer.tari.mw/template/<id>`, house: `https://explorer.tari.mw/substate/<id>`).
 
 ## Design notes
 

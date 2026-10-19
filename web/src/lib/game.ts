@@ -6,7 +6,7 @@ import { publicKeyOf, scalarFromBytes, scalarToBytes, sign, randomScalar } from 
 import { bytesToHex, hexToBytes } from "./bytes";
 
 export const TEMPLATE = "template_2fcf98c66e524bba67311e6b4c21bf8b528103bccd5e19091fca840cba789563";
-export const EXPLORER = "https://taritracker.com/ootle/esmeralda";
+export const EXPLORER = "https://explorer.tari.mw";
 export const FEE_PROBE = 2n * O.MICRO;
 export const FEE_RESERVE = 3n * O.MICRO;
 
@@ -250,8 +250,8 @@ export function closeAmount(house: HouseState, poolBalance: bigint): bigint {
   return poolBalance - house.owedTotal;
 }
 
-export const txUrl = (txId: string) => `${EXPLORER}/transactions/${txId}`;
-export const substateUrl = (id: string) => `${EXPLORER}/substates/${id}`;
+export const txUrl = (txId: string) => `${EXPLORER}/tx/${txId}`;
+export const substateUrl = (id: string) => `${EXPLORER}/substate/${id}`;
 
 export async function fetchVaultBalance(vault: string, url: string = O.INDEXER_URL): Promise<bigint> {
   const response = await fetch(`${url.replace(/\/$/, "")}/substates/${vault}`);

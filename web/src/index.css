@@ -20,10 +20,12 @@ body {
   font-family: "Georgia", "Times New Roman", serif;
   color: var(--ink);
   background:
+    linear-gradient(180deg, rgba(10, 6, 18, 0.15) 0%, rgba(10, 6, 18, 0.55) 55%, var(--bg) 100%) 0 0 / 100% 620px no-repeat,
+    url("/art/mansion.webp") center top / auto 620px no-repeat,
     radial-gradient(circle at 82% 8%, rgba(255, 244, 194, 0.22) 0, rgba(255, 244, 194, 0.08) 90px, transparent 160px),
     radial-gradient(circle at 20% 110%, rgba(255, 138, 31, 0.18), transparent 50%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg2) 60%, #1b0f20 100%);
-  background-attachment: fixed;
+  background-attachment: scroll, scroll, fixed, fixed, fixed;
 }
 a { color: var(--pumpkin2); }
 code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em; word-break: break-all; }

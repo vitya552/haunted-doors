@@ -8,7 +8,8 @@ import { publicKeyOf, randomScalar, scalarFromBytes, scalarToBytes, sign } from 
 import { bytesToHex, hexToBytes, randomBytes } from "../src/lib/bytes";
 
 export const TEMPLATE = "template_2fcf98c66e524bba67311e6b4c21bf8b528103bccd5e19091fca840cba789563";
-const STATE = ".local/game.json";
+const STATE = process.env.GAME_STATE ?? ".local/game.json";
+const REVEAL_WINDOW = BigInt(process.env.REVEAL_WINDOW ?? "30");
 const T = O.MICRO;
 
 interface GameState {
@@ -112,7 +113,7 @@ async function main() {
             arg.bytes32(layoutRoot(layout)),
             arg.amount(knockPrice),
             arg.amount(bond),
-            arg.u64(30n),
+            arg.u64(REVEAL_WINDOW),
             arg.u64(closeEpoch),
             { Workspace: bucket } as InstructionArg,
           ]),

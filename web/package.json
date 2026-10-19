@@ -30,10 +30,5 @@
     "vite": "^6.0.0",
     "vite-plugin-wasm": "^3.6.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "@swc/core"
-    ]
-  }
+  "packageManager": "pnpm@11.28.6"
 }

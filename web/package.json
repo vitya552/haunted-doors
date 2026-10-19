@@ -1,0 +1,39 @@
+{
+  "name": "haunted-doors-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@noble/curves": "1.9.2",
+    "@noble/hashes": "1.8.0",
+    "@tari-project/ootle": "0.9.0",
+    "@tari-project/ootle-indexer": "0.9.0",
+    "@tari-project/ootle-secret-key-wallet": "0.9.0",
+    "@tari-project/ootle-ts-bindings": "1.59.0",
+    "@tari-project/ootle-wasm": "0.46.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "tsx": "4.19.4",
+    "typescript": "~5.8.0",
+    "vite": "^6.0.0",
+    "vite-plugin-wasm": "^3.6.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@swc/core"
+    ]
+  }
+}
